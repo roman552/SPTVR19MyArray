@@ -14,6 +14,8 @@ import java.util.Random;
 class App {
     public void run() {
         System.out.println("---MyArray---");
+        System.out.println("Создайте массив из 20 случайных четных целых чисел.\nВычислите среднее арифметическое элементов массива\nбез учета минимального и максимального элементов массива.");
+        System.out.println("Решение: \nМассив целых четных чисел:");
         Random random = new Random();
         int rnum = 0;
         int min = 100;
@@ -37,5 +39,6 @@ class App {
         System.out.println();
         System.out.println("Среднее арифметическое без учета минимального ("+min+") и максимального ("+max+"):");
         System.out.printf("%.2f%n",(double)(sum-min-max)/(numbers.length - 2));
+        System.out.println("---end MyArray---");
     }
 }
